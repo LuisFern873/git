@@ -5,18 +5,20 @@ app = Flask(__name__)
 
 @app.route('/')
 
-def hello():
-    return '<h1>Hello, feature 1 and feature 2!</h1>'
-
 @app.route('/sumar')
 def sumar():
     param1 = 10
     param2 = 20
     return param1 + param2
 
-@app.route('/multiplicar')
-def multiplicar():
-    param1 = 10
-    param2 = 20
-    return param1 * param2
+@app.route('/multiplicacion')
+def multiplicacion():
+    a = request.args.get('a', 0, type=int)
+    b = request.args.get('b', 0, type=int)
+    return str(a*b)
 
+
+
+  
+def hello():
+  return '<h1>Hello, feature1 and feature2!</h1>'
