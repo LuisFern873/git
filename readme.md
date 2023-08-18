@@ -1,3 +1,4 @@
-Nombre: Luis Méndez
+Integrantes:
+- Luis Méndez
 
 ![]()
